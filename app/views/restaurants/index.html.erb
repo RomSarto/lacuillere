@@ -6,16 +6,20 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12 text-center">
-      <% @restaurants.each do |restaurant| %>
-        <ul class="list-inline">
-          <li>
-            <%= link_to restaurant_path(restaurant) do %>
+
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-xs-12 col-md-4 text-center">
+        <div class="card" style="background-image: url('https://unsplash.it/1000/400?image=1');" data-sr>
+          <div class="card-shadow">
+            <div class="card-text">
+              <%= link_to restaurant_path(restaurant) do %>
               <h5><%= restaurant.name%></h5>
-            <% end %>
-          </li>
-        </ul>
-      <% end %>
-    </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
+
 </div>
