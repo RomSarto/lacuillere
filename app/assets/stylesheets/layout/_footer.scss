@@ -1,1 +1,18 @@
-// Your footer style
+.footer {
+  background-color: #333333;
+  color: $gray-lighter;
+  font-size: 30px;
+  padding: 10px;
+  p {
+    font-size: 15px;
+    line-height: 50px;
+    text-align: left;
+  }
+  &-fixed {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+}
